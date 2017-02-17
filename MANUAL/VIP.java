@@ -3,6 +3,7 @@
 
 
 
+
 실행하기전 pi 마운트
 
 emergency.sh

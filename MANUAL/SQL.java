@@ -1,10 +1,11 @@
-
 <<SRT_TO_MYSQL__OPERATION
 
 
 
+
+
 1)
-mysql -u root -p (mysql) @mymysql @my-sql
+mysql -u root -p (mysql) .... @mysqlconf @mymysql @my-sql
 
 -------------------------------------------------
 
@@ -62,6 +63,13 @@ def insert_srt_to_mysql():
 	#conn = pymysql.connect(host='localhost', user='root', password='root', db='srt', charset='utf8')
 
 clean.sh -> launch.sh 후 파일 업로드
+
+
+
+
+
+
+
 
 
 SRT_TO_MYSQL__OPERATION
