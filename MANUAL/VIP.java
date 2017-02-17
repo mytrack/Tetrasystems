@@ -1,7 +1,10 @@
 <<VERY_IMPORTANT
 
+crontab crontab_conf  #이렇게만 해도 충분히 올라간다
 
+crontab -l 로 확인
 
+crontab -e 로 수정하기보다는 crontab_conf를 수정 
 
 
 실행하기전 pi 마운트
@@ -51,6 +54,7 @@ mysql_conf /etc/mysql/my.cnf에서 처럼 3개를 추가하면 된다
 
 status 확인했을때  Db characterset: latin1
 라면 데이터베이스를 삭제후 다시 생성한다.
+
 
 
 
