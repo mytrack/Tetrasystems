@@ -1,6 +1,14 @@
 <<RASPBERRY_PI
 
-라즈베리파이 매뉴얼
+
+
+RASPBERRY_PI
+
+
+<<TRASPIX_INSTRUCTION_MANUAL
+
+
+트라스픽스 운영 매뉴얼
 
 https://www.raspberrypi.org/downloads/raspbian/ 
 웹접속 -> 최신 버전 다운로드 -> zip 이 약간 빠르다
@@ -46,27 +54,53 @@ Welcome To TRASPIX !!! Total RASpberryPI eXpress
 하지만 트라스픽스가 있기에 이제 라즈베리파이를 날려먹어도 별로 걱정은 없다. 
 
 현재 총 6가지 옵션이 있다. 계속 업그레이드 할 예정.
-birth, config, samba, trans, backup, 그리고 무옵션인 업그레이드. 
+birth, config, samba, trans, backup, 그리고 무옵션인 업그레이드.
 
-Traspix birth 
-최초 탄생 옵션으로 인터넷세상과 연결하여 길들여준다. 오래걸린다. 
+1~3)까지는 꼭 순서를 지킬 것 
 
-Traspix config
-환경설정을 한다. vi를 쓰기전에 꼭!!!
+1)Traspix birth    -> 최초 탄생 옵션으로 인터넷세상과 연결하여 길들여준다. 오래걸린다. 
+
+2)Traspix config   -> 환경설정을 한다. vi를 쓰기전에 꼭!이 아니라 nano를 쓰자
+
+3)Traspix restore  -> 중요하다. 조심해야 한다. home에 백업용 emergency_pi 디렉토리가 꼭 있어야한다.
+
+crontab_conf 는 특성상 수동으로 최초 설정해준다. 백업만 자동화
+
 
 이다음부터는 설명을 생략~ 알아서...
-
 Traspix samba 
-Traspix trans 
+Traspix transmission 
+
+
+backup 명령은 최초 사용시 주의가 필요하다. 
+모두 날릴 수가 있다. 
+최초 emergency_pi 완전히 restore 셋팅후에 백업을 수행한다.
+디렉토리를 꼭 압축해제하여  생성되어 있어야 한다.
+Traspix backup  
 
 
 
 
 
+이거때문에 고생하지말것
+!!!!important!!!!ERROR(XXXXXXX) "rpc-whitelist": "192.168.*.*","127.0.0.1", 
+whitelist 에서 "", 는 하나로만 묶어야된다 "","",로 나오는 문서는 틀린것.
+
+그리고 sudo service transmission-daemon restart 를 autostartup.sh 에 꼭 시작시켜준다
 
 
+Prototype A - Jessie Lite
+CLI-autologin, 
+password changed, 
+ssh server enabled,
+iptables firewall.conf방식으로 부팅후 시작, 
+no Expand Filesystem,
+no ssh root login,
+static ip
 
-RASPBERRY_PI
+
+TRASPIX_INSTRUCTION_MANUAL
+
 
 
 

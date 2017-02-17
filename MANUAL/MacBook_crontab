@@ -1,1 +1,1 @@
- 0,5,10,15,20 * * * * /usr/bin/logger "cron is working"
+0,5,10,15,20 * * * * /usr/bin/logger "cron is working"

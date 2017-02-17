@@ -1,6 +1,8 @@
 
 <<SRT_TO_MYSQL__OPERATION
 
+
+
 1)
 mysql -u root -p (mysql) @mymysql @my-sql
 

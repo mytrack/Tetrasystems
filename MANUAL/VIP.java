@@ -1,15 +1,17 @@
 <<VERY_IMPORTANT
 
 
+
+
 실행하기전 pi 마운트
 
 emergency.sh
 
+최초 실행이 되다가 무슨문제로 실행이 안됨
 rsync ~/Documents/EMERGENCY_Raspberry_Pi /Volumes/pi --progress -av 
 
 
-
-12345 포트 열기
+firewall 에서 포트 열기
 
 
 fileupload install)
