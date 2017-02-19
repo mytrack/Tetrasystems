@@ -1,21 +1,23 @@
 <<VERY_IMPORTANT
 
+
+
+macos crontab)
 crontab crontab_conf  #이렇게만 해도 충분히 올라간다
-
 crontab -l 로 확인
-
 crontab -e 로 수정하기보다는 crontab_conf를 수정 
 
 
-실행하기전 pi 마운트
 
+emergency rpi sync)
+실행하기전 pi 마운트
 emergency.sh
 
 최초 실행이 되다가 무슨문제로 실행이 안됨
 rsync ~/Documents/EMERGENCY_Raspberry_Pi /Volumes/pi --progress -av 
 
 
-firewall 에서 포트 열기
+firewall 에서 포트 열기)
 
 
 fileupload install)
