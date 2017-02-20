@@ -11,8 +11,10 @@ alias .pro='source ~/.bash_profile'
 alias 'ls=ls -GFh'
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
-                                           
+#Colors for Light Terminal Themes:
+#export LSCOLORS=ExFxBxDxCxegedabagacad
+#Colors for Dark Terminal Themes:
+export LSCOLORS=GxFxCxDxBxegedabagaced                                           
 
 
 ALIAS_ASSIGN_PROFILE
