@@ -1092,11 +1092,12 @@ UNIX_TECHS
 
 
 
+
+
+
 <<SUBLIME_KEY
 
-sublime text 
-
-settings -- user
+sublime text) settings -- user)
 Vintage
 "open_files_in_new_window": false,
 
@@ -1113,5 +1114,6 @@ C- jump CS-
 #CAdown go definition
 
 SUBLIME_KEY
+
 
 

@@ -3,13 +3,12 @@
 
 
 #GET
-
-rsync /Volume/pi/EMERGENCY_Raspberry_Pi/ ~/Documents/ --progress -av 
+#rsync /Volume/pi/EMERGENCY_Raspberry_Pi/ ~/Documents/ --progress -av 
 
 
 
 #PUT
-rsync ~/Documents/EMERGENCY_Raspberry_Pi /Volumes/pi --progress -av 
+#rsync ~/Documents/EMERGENCY_Raspberry_Pi /Volumes/pi --progress -av 
 
 
 

@@ -32,7 +32,7 @@ div{}
 	</form>
 </div>		
 
-query=====> firstname=Kim&lastname=Sungsoo&country=korea 로 서버로 넘어간다
+query=====> firstname=Kim&lastname=Su&country=Korea 로 서버로 넘어간다
 
 
 CSS_STYLESHEET

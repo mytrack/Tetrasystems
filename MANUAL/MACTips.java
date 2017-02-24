@@ -101,5 +101,14 @@ fn ^ f8 = fn C f8
 command | pbcopy
 
 
+{ Home Brew Installation }
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+
+{ m-cli install }
+
+brew install m-cli
+
 
 MAC_TIPS
