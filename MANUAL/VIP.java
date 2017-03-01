@@ -58,6 +58,8 @@ status 확인했을때  Db characterset: latin1
 라면 데이터베이스를 삭제후 다시 생성한다.
 
 
+네트워크인증키: speed of light -> user/=password
+
 
 
 VERY_IMPORTANT

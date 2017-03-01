@@ -1,5 +1,12 @@
 <<RASPBERRY_PI_MANUAL
 
+
+
+TTS)
+http://elinux.org/RPi_Text_to_Speech_(Speech_Synthesis)
+
+
+
 RASPBERRY_PI_MANUAL
 
 
@@ -10,8 +17,12 @@ RASPBERRY_PI_MANUAL
 
 <<TRASPIX_OPERATION_MANUAL
 
-
 트라스픽스 운영 매뉴얼
+
+
+
+
+
 
 https://www.raspberrypi.org/downloads/raspbian/ 
 웹접속 -> 최신 버전 다운로드 -> zip 이 약간 빠르다
@@ -100,6 +111,14 @@ iptables firewall.conf방식으로 부팅후 시작,
 no Expand Filesystem,
 no ssh root login,
 static ip
+
+
+
+
+
+
+
+
 
 
 TRASPIX_OPERATION_MANUAL
