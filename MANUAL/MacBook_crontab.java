@@ -5,13 +5,13 @@ DATEVAR=date +20%y%m%d_%H%M%S
 
 # specify min
 #5,15,15,35,45,55 * * * * echo $($DATEVAR) >> ~/Tetrasystems/mytrack.log
-*/10 * * * * echo $($DATEVAR) >> ~/Tetrasystems/mytrack_per_10_min.log
+*/5 * * * * echo $($DATEVAR) >> ~/Tetrasystems/mytrack_per_5_min.log
 
 
 # backup timestamp
 #0,7,17,27,37,47,57 * * * * echo $($DATEVAR) >> ~/Tetrasystems/cron_timestamp_mytrack.log
-*/15 * * * * echo $($DATEVAR) >> ~/Tetrasystems/cron_backup_timestamp_mytrack.log
-*/15 * * * * ~/backup.sh >/dev/null 2>&1
+*/10 * * * * echo $($DATEVAR) >> ~/Tetrasystems/cron_backup_timestamp_mytrack.log
+*/10 * * * * ~/backup.sh >/dev/null 2>&1
 
 
 # specify hour
