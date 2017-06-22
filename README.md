@@ -4,7 +4,7 @@
 Welcome To Tetrasystems 
 
 
-Tetrasystems is total raspberry-ri express based embeded system.
+Tetrasystems is Total Raspberry-pi Express based embeded system.
 
 
 
