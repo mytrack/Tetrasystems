@@ -114,43 +114,6 @@ static ip
 
 
 
-(MPSYT)
-http://tsengf.blogspot.kr/2014/12/play-youtube-audio-from-command-line-on.html
-sudo pip3 install mps-youtube
-
-Running:
-1. Invoke mps-youtube by running the following command from a terminal.
-mpsyt
-2. Configure the audio player by running the following command.
-set player omxplayer
-3. Search for youtube content by running the following command.
-/<search terms>
-4. Select one of the results to play by typing the number.
-
-
-
-
-(YOUTUBE-DL raspberry pi commandline youtube player)
-
-wget https://github.com/rg3/youtube-dl/raw/2012.02.27/youtube-dl
-
-chmod +x youtube-dl
-cp youtube-dl /usr/bin/youtube-dl
-
-OR 
-
-# Install dependancies
-sudo apt-get install youtube-dl
-# Ensure using latest version of youtube-dl to keep up with YouTube API changes
-sudo youtube-dl -U
-#Run youtube-dl. When prompted press enter to finish updating
-sudo youtube-dl 
-#Finally reboot for good measure
-sudo reboot
-
-
-
-
 
 
 

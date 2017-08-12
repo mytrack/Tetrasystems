@@ -37,5 +37,10 @@ tox -e quick
 
 
 
+pyfirmata)
+sa-gi python-pip python-serial
+sudo pip install pyfirmata
+
+
 
 FLASK_SETUP

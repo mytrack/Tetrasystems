@@ -10,7 +10,8 @@ Vintage
 #p #r #Sr ^g #g #Sg
 C- jump CS- 
 #[ indent ]
-#/ comment 
+#/  line comment // 
+#A/ block comment /* */
 #A[folding]
 #Ar replace
 
