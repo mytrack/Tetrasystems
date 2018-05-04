@@ -1,6 +1,13 @@
 <<MPS_YOUTUBE__OPERATION
 
+keypoint {
+	user " "
+	userpl " "
+	//" "
+	url " "
 
+	" " 띄어쓰기 가능, 한글가능
+}
 
 
 http://tsengf.blogspot.kr/2014/12/play-youtube-audio-from-command-line-on.html
@@ -48,9 +55,59 @@ help search
 ......
 
 
-search.... 
+
+
+
+
+search......
+
 user <username> <-- youtube profile name above Subscribe button
 save <playlistname> 
+
+
+
+
+> help search 
+
+playlists search by user
+
+
+
+> userpl voa learning english
+
+userpl <username on profile> 
+userpl Michael Elliott
+userpl ted 
+userpl jason english
+
+//Kendra's Language School
+
+playurl https://youtu.be/kX7i3l0WSe8
+playurl https://youtu.be/Lvn-GRjKQ6Q
+playurl https://youtu.be/OyTf2P5quxM?list=PL6_so45sg_IfSTNwRxZAkTShCp-kTQtyW
+
+왕초보 영어회화 무작정 따라하기
+playurl https://www.youtube.com/playlist?list=PL6_so45sg_IfSTNwRxZAkTShCp-kTQtyW 
+
+
+
+
+> pl <playlist url>
+
+
+검색하고자 하는 playlist 검색이 안될 경우 검색방법 2가지
+ex) The 20 Most-Watched TEDTalks <--- 플레이리스트 타이틀
+
+1. pl https://www.youtube.com/playlist?list=PL70DEC2B0568B5469 
+   pl  <playlist url>
+
+2. //The 20 Most-Watched TEDTalks
+
+
+list search by user
+
+> user <username>
+
 
 ex) user ted 
 save ted 
@@ -91,6 +148,12 @@ mpsyt //best mozart,1,1-3  ====> continuous invoke command
 mpsyt //best beethoven,1,1-3  ====> continuous invoke command
 mpsyt //christmas carol, 4, all
 
+
+
+
+
+
+
 <other MANUAL>
 http://www.webupd8.org/2014/02/new-command-line-youtube-player-and.html
 
@@ -115,7 +178,13 @@ mpsyt open ted,shuffle all
 ex> mpsyt set player mpv,open ted,shuffle all
 
 --> Invoke long music player
-ex> mpsyt set player omxplayer,open bach,shuffle all
+ex> mpsyt set player omxplayer,open xpress,shuffle all
+
+
+
+config......
+ 
+~/.config/mps-youtube/playlist_v2  <---- playlist backup file 
 
 
 
@@ -125,9 +194,7 @@ upgrading......
 
 sudo pip3 install mps-youtube --upgrade
 
-
-
-
+alias my-upgrade='sudo pip3 install mps-youtube --upgrade'
 
 
 
@@ -136,48 +203,28 @@ MPS_YOUTUBE__OPERATION
 
 
 
-<<SPARK__Terminal_Invoke_My-MPV-TED
-
-say "Terminal Invoke My MPV TED"
-
-tell application "Terminal"
-	activate
-	do script ("expect -c 'spawn ssh pi@pi; expect \"*?assword:*\"; send \".,_AERO)(*&^\\r \";  send \"my-mpv-ted\\r \";
-	interact'")
-	
-end tell
-
-(*
-tell application "Terminal"
-	activate
-	do script ("expect -c 'spawn ssh pi@pi; expect \"*?assword:*\"; send \".,_AERO)(*&^\\r \";  send \"play\\r \";send \"vol\\r \"; interact'")
-	
-end tell
-
---> Invoke many speech player  
-ex> mpsyt set player mpv,open ted,shuffle all
-
-alias my-mpv-ted='mpsyt set player mpv,open ted,shuffle all'
-
---> Invoke long music player
-ex> mpsyt set player omxplayer,open bach,shuffle all
-
-alias my-omx-bach='mpsyt set player omxplayer,open bach,shuffle all'
-
-*)
-
-SPARK__Terminal_Invoke_My-MPV-TED
 
 
 
-<<SPARK__Terminal_Invoke_My-OMX-Bach
 
-say "Terminal Invoke My OMX Bach"
+
+
+
+
+
+
+
+
+
+
+<<SPARK_____Terminal_Invoke_my-mpv-xpress
+
+say "Terminal Invoke my-mpv-xpress"
 
 
 tell application "Terminal"
 	activate
-	do script ("expect -c 'spawn ssh pi@pi; expect \"*?assword:*\"; send \".,_AERO)(*&^\\r \";  send \"my-omx-bach\\r \";
+	do script ("expect -c 'spawn ssh pi@pi; expect \"*?assword:*\"; send \".,_AERO)(*&^\\r \";  send \"my-mpv-xpress\\r \";
 	interact'")
 	
 end tell
@@ -192,9 +239,9 @@ end tell
 
 
 --> Invoke many speech player  
-ex> mpsyt set player mpv,open ted,shuffle all
+ex> mpsyt set player mpv,open xpress,shuffle all
 
-alias my-mpv-ted='mpsyt set player mpv,open ted,shuffle all'
+alias my-mpv-xpress='mpsyt set player mpv,open ted,shuffle all'
 
 --> Invoke long music player
 ex> mpsyt set player omxplayer,open bach,shuffle all
@@ -203,4 +250,41 @@ alias my-omx-bach='mpsyt set player omxplayer,open bach,shuffle all'
 
 *)
 
-SPARK__Terminal_Invoke_My-OMX-Bach
+SPARK_____Terminal_Invoke_my-mpv-xpress
+
+
+
+<<SPARK_____Terminal_Invoke_my-omx-bgm 
+
+say "Terminal Invoke my-omx-bgm"
+
+
+tell application "Terminal"
+	activate
+	do script ("expect -c 'spawn ssh pi@pi; expect \"*?assword:*\"; send \".,_AERO)(*&^\\r \";  send \"my-omx-bgm\\r \";
+	interact'")
+	
+end tell
+
+(*
+tell application "Terminal"
+	activate
+	do script ("expect -c 'spawn ssh pi@pi; expect \"*?assword:*\"; send \".,_AERO)(*&^\\r \";  send \"play\\r \";send \"vol\\r \"; interact'")
+	
+end tell
+
+
+
+--> Invoke many speech player  
+ex> mpsyt set player mpv,open xpress,shuffle all
+
+alias my-mpv-xpress='mpsyt set player mpv,open xpress,shuffle all'
+
+--> Invoke long music player
+ex> mpsyt set player omxplayer,open bgm,shuffle all
+
+alias my-omx-bgm='mpsyt set player omxplayer,open bgm,shuffle all'
+
+*)
+
+SPARK_____Terminal_Invoke_my-omx-bgm
