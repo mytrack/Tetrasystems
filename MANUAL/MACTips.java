@@ -4,11 +4,13 @@
 ( #=command=win !=option=alt ^=control=ctrl +=shift )
 
 
-{ Blackbox SD Card Format on OSX command line }
+{ Blackbox 
+ Card Format on제OSX command line }
 
 # diskutil list
 
-# sudo diskutil eraseDisk FAT32 REAR_4G MBRFormat /dev/disk2
+# Caution do not copy and paste
+# sudo diskutil eraseDisk FAT32 REAR_4G MBRFormat /dev/disk7
 
 
 { Safari Extension }
@@ -110,6 +112,28 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew install m-cli
 
+
+{ Right Mouse Click Menu Item Optimize }
+
+1st Way
+
+$/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r 
+-domain local -domain user
+
+
+Wait about 10 seconds...
+
+
+$killall Finder
+
+
+2nd Way
+
+inder > Go  [Opt Key]  > Library > Preferences 
+
+ > com.apple.LaunchServices.plist <- 파일을 삭제
+
+/Users/ID../Library/Preferences/com.apple.LaunchServices.plist
 
 
 

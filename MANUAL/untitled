@@ -1,0 +1,47 @@
+
+
+
+
+Finder > Go  [Opt Key]  > Library > Preferences 
+
+ > com.apple.LaunchServices.plist <- 파일을 삭제
+
+/Users/ID../Library/Preferences/com.apple.LaunchServices.plist
+
+
+
+
+$/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain user
+
+
+Wait about 10 seconds...
+
+
+$killall Finder
+
+
+
+사람주어 감정표현
+사람주어 의견표현
+사람주어 상황장소표현
+유 주어
+사람표현 해브
+포함관계 해브
+있다 **
+풋
+애스크 원트 플레이
+수식
+부사절을 전치사로
+전치사 + 명사 = 진행형
+위드 부대상황
+전치사 + 명사 = 진행형 2
+한국식 표현
+동사생략, 동사간단히
+부사절을 명사주어 전치사로
+부정문 부정의부정은 긍정
+부사를 동사로
+꼭, 확실해
+동사를 부사로 바꿔
+동작원인과 감정원인을 주어로
+
+
